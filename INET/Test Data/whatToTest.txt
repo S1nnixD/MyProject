@@ -1,0 +1,6 @@
+Vad för tester?
+
+Smoketests - fungerar de mest simpla funktionerna, hur kollar jag det i Selenium?
+Claims - vad lovas och hur kollar vi på det?
+Acceptanstest? - Redo som en färdig produkt?
+Boundaries - Gränsvärden, filter osv?
