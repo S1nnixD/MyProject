@@ -1,0 +1,178 @@
+{
+  "id": "5481a08e-15d4-47e6-a41f-5fae7a5ba1c5",
+  "version": "2.0",
+  "name": "INET Testdata",
+  "url": "https://www.inet.se",
+  "tests": [{
+    "id": "a68a9514-ba4a-4dcf-adc9-06a11e1e6220",
+    "name": "Find PS5 w. artnr",
+    "commands": [{
+      "id": "fbcf9edf-b7be-4157-9d58-c5717fe140f7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aecb9ad5-ead3-4ffc-8077-10995cf8f603",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1861x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96101fee-edc4-4eed-9544-64ffbb05afec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/header/nav/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bc5b9b1-6f00-4260-b07c-be8162a4f363",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@value='6609862']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/header/nav/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "6609862"
+    }, {
+      "id": "ea1d905c-8bfb-4073-ad0f-7d5cbc9a87af",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@value='6609862']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/header/nav/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "338419f1-242a-4226-8547-2454792ee701",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product-page > .box h1",
+      "targets": [
+        ["css=.product-page > .box h1", "css:finder"],
+        ["xpath=//div[@id='react-root']/div[3]/div/div[2]/div[2]/article/section[2]/header/h1", "xpath:idRelative"],
+        ["xpath=//header/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Sony Playstation 5 Digital Edition')]", "xpath:innerText"]
+      ],
+      "value": "Sony Playstation 5 Digital Edition"
+    }]
+  }, {
+    "id": "1c098f0e-3ac3-4df9-bc8a-2fef2339ab40",
+    "name": "Check pop. categories",
+    "commands": [{
+      "id": "442aafef-901e-490b-8cd9-ea8709605dac",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1df16bc6-8e2c-45a0-b6bd-e4eb7ff6621f",
+      "comment": "",
+      "command": "verifyEditable",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/header/nav/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "784b3c1c-172c-48c5-a277-9a728a9a9405",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.category-button:nth-child(1)",
+      "targets": [
+        ["css=.category-button:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='react-root']/div[3]/div/div[2]/div[2]/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/kategori/27/datorer')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/a", "xpath:position"]
+      ],
+      "value": "Datorer"
+    }, {
+      "id": "542a5c1b-5107-4bbe-a508-519ea5c31329",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.category-button:nth-child(2)",
+      "targets": [
+        ["css=.category-button:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='react-root']/div[3]/div/div[2]/div[2]/div[3]/div/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/kategori/31/datorkomponenter')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/a[2]", "xpath:position"]
+      ],
+      "value": "Dator­komponenter"
+    }, {
+      "id": "12dfb8cb-fb1b-4a25-961d-cb80c42f304e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.category-button:nth-child(3)",
+      "targets": [
+        ["css=.category-button:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='react-root']/div[3]/div/div[2]/div[2]/div[3]/div/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/kategori/31/datorkomponenter')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/a[2]", "xpath:position"]
+      ],
+      "value": "Bildskärm"
+    }, {
+      "id": "989e0379-267a-473a-bcc7-32cc54c06de2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.category-button:nth-child(4)",
+      "targets": [
+        ["css=.category-button:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='react-root']/div[3]/div/div[2]/div[2]/div[3]/div/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/kategori/31/datorkomponenter')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/a[2]", "xpath:position"]
+      ],
+      "value": "Datortillbehör"
+    }, {
+      "id": "9bb94640-dbc9-4da4-9d24-ec6eb4de743f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.category-button:nth-child(5)",
+      "targets": [
+        ["css=.category-button:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='react-root']/div[3]/div/div[2]/div[2]/div[3]/div/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/kategori/31/datorkomponenter')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/a[2]", "xpath:position"]
+      ],
+      "value": "Smarta Hem"
+    }, {
+      "id": "fd3afd36-8ac1-479a-a106-49cb1dd40666",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.category-button:nth-child(6)",
+      "targets": [
+        ["css=.category-button:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='react-root']/div[3]/div/div[2]/div[2]/div[3]/div/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/kategori/31/datorkomponenter')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/a[2]", "xpath:position"]
+      ],
+      "value": "Spel/Konsol/VR"
+    }]
+  }],
+  "suites": [{
+    "id": "2af5dcd5-966b-4cb0-b626-1a903dafbcf5",
+    "name": "INET",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1c098f0e-3ac3-4df9-bc8a-2fef2339ab40", "a68a9514-ba4a-4dcf-adc9-06a11e1e6220"]
+  }],
+  "urls": ["https://www.inet.se/"],
+  "plugins": []
+}
