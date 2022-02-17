@@ -105,3 +105,7 @@ C:\Users\S1nni\Desktop\Testautomatisering\MyProject\INET\Test Data\INET Tests\IN
 C:\Users\S1nni\Desktop\Testautomatisering\MyProject\INET\Test Data\INET Tests\INET Tests\obj\Debug\net6.0\ref\INET Tests.dll
 C:\Users\S1nni\Desktop\Testautomatisering\MyProject\INET\Test Data\INET Tests\INET Tests\obj\Debug\net6.0\INET Tests.pdb
 C:\Users\S1nni\Desktop\Testautomatisering\MyProject\INET\Test Data\INET Tests\INET Tests\obj\Debug\net6.0\INET Tests.genruntimeconfig.cache
+C:\Users\S1nni\Desktop\Testautomatisering\MyProject\INET\Test Data\INET Tests\INET Tests\bin\Debug\net6.0\xunit.abstractions.dll
+C:\Users\S1nni\Desktop\Testautomatisering\MyProject\INET\Test Data\INET Tests\INET Tests\bin\Debug\net6.0\xunit.assert.dll
+C:\Users\S1nni\Desktop\Testautomatisering\MyProject\INET\Test Data\INET Tests\INET Tests\bin\Debug\net6.0\xunit.core.dll
+C:\Users\S1nni\Desktop\Testautomatisering\MyProject\INET\Test Data\INET Tests\INET Tests\bin\Debug\net6.0\xunit.execution.dotnet.dll

@@ -12,7 +12,7 @@ using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Interactions;
 using NUnit.Framework;
 [TestFixture]
-public class FindPS5wartnrTest {
+public class FindPS5artnrTest {
   private IWebDriver driver;
   public IDictionary<string, object> vars {get; private set;}
   private IJavaScriptExecutor js;

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bb24bab8-109b-42d9-abfa-83cf0ac16e96": {
+      "ProjectGuid": "bb24bab8-109b-42d9-abfa-83cf0ac16e96",
+      "DisplayName": "INET Tests",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
