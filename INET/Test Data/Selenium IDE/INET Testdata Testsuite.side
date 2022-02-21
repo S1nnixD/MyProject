@@ -164,6 +164,158 @@
       ],
       "value": "Spel/Konsol/VR"
     }]
+  }, {
+    "id": "69e2d220-b246-4e41-918f-f4fbf4770928",
+    "name": "Kolla kundvagn",
+    "commands": [{
+      "id": "91cd6cc8-34f6-4e81-9b4f-956dfb106505",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "501a56c3-cfed-47ed-8ed3-46aad75204c0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1861x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78d04d3c-e7cf-4736-a54e-0062ed983b9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/header/nav/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c49f15d-ada5-4514-baf4-69ebde4af7f7",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@value='6609862']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/header/nav/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "4302202"
+    }, {
+      "id": "81ef3631-9db3-4ffe-8ba7-b94a61ce8da5",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@value='6609862']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/header/nav/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "3f690366-e687-49e9-b7a3-f23e13668d89",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Samsung 980 PRO M.2 NVMe SSD 1TB - Inet.se",
+      "targets": [],
+      "value": "Samsung 980 PRO M.2 NVMe SSD 1TB - Inet.se"
+    }, {
+      "id": "116c6178-7fc5-4a4d-9d60-7838ef421fb8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-buy",
+      "targets": [
+        ["css=.btn-buy", "css:finder"],
+        ["xpath=(//button[@type='button'])[262]", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[3]/div/div[2]/div[2]/article/div[2]/section[2]/div/button", "xpath:idRelative"],
+        ["xpath=//section[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a3be8ff-848f-442a-ac02-18d8c5036a45",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.price-col:nth-child(3) > .price",
+      "targets": [
+        ["css=.price-col:nth-child(3) > .price", "css:finder"],
+        ["xpath=//div[@id='react-root']/div[2]/nav/div/div/div[2]/div/div/div/div/ul/li/div/article/div[3]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'1 849 kr')]", "xpath:innerText"]
+      ],
+      "value": "1 849 kr"
+    }, {
+      "id": "05ca9e66-2524-4714-a587-9a5d6cd271f6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.freight > .price-col",
+      "targets": [
+        ["css=.freight > .price-col", "css:finder"],
+        ["xpath=//div[@id='react-root']/div[2]/nav/div/div/div[2]/div/div/div/div/footer/div/div/div", "xpath:idRelative"],
+        ["xpath=//footer/div/div/div", "xpath:position"]
+      ],
+      "value": "0 kr"
+    }, {
+      "id": "71b248f6-8f54-401b-8f9e-2f65597d4499",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.qty-selector > label",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "a1b09110-0488-43ca-b5dd-4c4e47be2247",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tabs li:nth-child(3)",
+      "targets": [
+        ["css=.tabs li:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='react-root']/div[2]/nav/div/div/div[2]/div/div/div/div[2]/div/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Töm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d3eb931-e37a-4c1a-9cf2-49a3f14a9fa4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.t1cke9b5",
+      "targets": [
+        ["css=.t1cke9b5", "css:finder"],
+        ["xpath=//body[@id='inet']/div[12]/div/div/section/header/h1", "xpath:idRelative"],
+        ["xpath=//div/div/section/header/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Töm kundvagnen')]", "xpath:innerText"]
+      ],
+      "value": "Töm kundvagnen"
+    }, {
+      "id": "6cc444f6-4783-474d-97d9-9328856a4ba4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=(//button[@type='button'])[420]", "xpath:attributes"],
+        ["xpath=//body[@id='inet']/div[10]/div/div/section/footer/div/button[2]", "xpath:idRelative"],
+        ["xpath=//footer/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Töm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7742b7fc-2e32-4bcd-8f3b-d7ea6f5bc422",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.empty-cart > h1",
+      "targets": [
+        ["css=.empty-cart > h1", "css:finder"],
+        ["xpath=//div[@id='react-root']/div[2]/nav/div/div/div[2]/div/div/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Din kundvagn är tom')]", "xpath:innerText"]
+      ],
+      "value": "Din kundvagn är tom"
+    }]
   }],
   "suites": [{
     "id": "2af5dcd5-966b-4cb0-b626-1a903dafbcf5",
