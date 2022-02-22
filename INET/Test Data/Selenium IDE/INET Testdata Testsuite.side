@@ -316,6 +316,192 @@
       ],
       "value": "Din kundvagn är tom"
     }]
+  }, {
+    "id": "b4e4c82b-eadb-4544-9ece-d7f0ee968fa9",
+    "name": "Check login",
+    "commands": [{
+      "id": "c7311b72-8600-473c-85b1-216b702a433a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4fc30769-febe-473e-9df1-92588a4e2e9a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d39e715-1801-4dc4-8ae4-257fb3ebf92c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.user > .text-nowrap",
+      "targets": [
+        ["css=.user > .text-nowrap", "css:finder"],
+        ["xpath=//div[@id='react-root']/div[2]/nav/div/div/button/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Min sida')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "31c02d2e-0cd7-43d6-8028-bb63de143e79",
+      "comment": "",
+      "command": "type",
+      "target": "id=login.email",
+      "targets": [
+        ["id=login.email", "id"],
+        ["name=email", "name"],
+        ["css=#login\\.email", "css:finder"],
+        ["xpath=//input[@id='login.email']", "xpath:attributes"],
+        ["xpath=//body[@id='inet']/div[8]/div/div/form/section/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "asdasd@test.com"
+    }, {
+      "id": "2bb8e3b2-f32e-4c26-aac9-a707d4a8033a",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//body[@id='inet']/div[8]/div/div/form/section/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "asdasd"
+    }, {
+      "id": "51ddeb60-5dd7-4115-8609-df7a0a4c3799",
+      "comment": "",
+      "command": "click",
+      "target": "css=label > input",
+      "targets": [
+        ["css=label > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//body[@id='inet']/div[8]/div/div/form/section/div/div/div[3]/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47648c07-9d99-4d13-8b3f-e9c997e51ea2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.x-modal-action-button",
+      "targets": [
+        ["css=.x-modal-action-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//body[@id='inet']/div[8]/div/div/form/section/footer/div[2]/button", "xpath:idRelative"],
+        ["xpath=//footer/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logga in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a561bde8-feb1-4b61-99aa-2d7da7bf655a",
+      "comment": "",
+      "command": "assertValue",
+      "target": "css=label > input",
+      "targets": [
+        ["css=label > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//body[@id='inet']/div[10]/div/div/form/section/div/div/div[4]/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "on"
+    }, {
+      "id": "61e13f37-1d2d-4312-b8fb-70439f67abd6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//body[@id='inet']/div[10]/div/div/form/section/div/div/div/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Felaktigt användarnamn eller lösenord.')]", "xpath:innerText"]
+      ],
+      "value": "Felaktigt användarnamn eller lösenord."
+    }, {
+      "id": "8d899a86-7143-4b85-a0e8-44927b1e227e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5dc79c8f-3cc5-482e-854a-db9e2cee9bc1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.user > .text-nowrap",
+      "targets": [
+        ["css=.user > .text-nowrap", "css:finder"],
+        ["xpath=//div[@id='react-root']/div[2]/nav/div/div/button/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Min sida')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf79aabf-bb4c-49b6-8541-4b667265f9a4",
+      "comment": "",
+      "command": "assertValue",
+      "target": "xpath=//*[@id=\"inet\"]/div[8]/div/div/form/section/div/div/div[3]/div/label/input",
+      "targets": [
+        ["css=label > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//body[@id='inet']/div[10]/div/div/form/section/div/div/div[4]/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "on"
+    }, {
+      "id": "17d2de27-6c5e-407e-ba53-e8fe361ee303",
+      "comment": "",
+      "command": "click",
+      "target": "css=.x-modal-action-button",
+      "targets": [
+        ["css=.x-modal-action-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//body[@id='inet']/div[10]/div/div/form/section/footer/div[2]/button", "xpath:idRelative"],
+        ["xpath=//footer/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logga in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac7b088a-b7dd-40f4-b6c9-9c78cae1f9da",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.t1cke9b5",
+      "targets": [
+        ["css=.t1cke9b5", "css:finder"],
+        ["xpath=//body[@id='inet']/div[10]/div/div/form/section/header/h1", "xpath:idRelative"],
+        ["xpath=//header/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Logga in')]", "xpath:innerText"]
+      ],
+      "value": "Logga in"
+    }, {
+      "id": "d1cdb442-ee77-44cd-99f5-8f52e9ff3a2f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-times",
+      "targets": [
+        ["css=.fa-times", "css:finder"],
+        ["xpath=//body[@id='inet']/div[10]/div/div/button/i", "xpath:idRelative"],
+        ["xpath=//div[10]/div/div/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c7dc06f-665a-4914-91b5-0a2377e98087",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.user > .text-nowrap",
+      "targets": [
+        ["css=.user > .text-nowrap", "css:finder"],
+        ["xpath=//div[@id='react-root']/div[2]/nav/div/div/button/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Min sida')]", "xpath:innerText"]
+      ],
+      "value": "Min sida"
+    }]
   }],
   "suites": [{
     "id": "2af5dcd5-966b-4cb0-b626-1a903dafbcf5",

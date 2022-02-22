@@ -22,6 +22,8 @@ public class KollakundvagnTest {
         driver = new ChromeDriver();
         js = (IJavaScriptExecutor)driver;
         vars = new Dictionary<string, object>();
+
+        driver.Manage().Cookies.DeleteAllCookies();
     }
   [TearDown]
   protected void TearDown() 
@@ -38,6 +40,9 @@ public class KollakundvagnTest {
         driver.FindElement(By.CssSelector(".form-control")).SendKeys(Keys.Enter);
         Assert.That(driver.Title, Is.EqualTo("Samsung 980 PRO M.2 NVMe SSD 1TB - Inet.se"));
         driver.FindElement(By.CssSelector(".btn-buy")).Click();
+        driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+        //WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
+        //IWebElement firstResult = wait.Until(e => e.FindElement(By.CssSelector(".price-col:nth-child(3) > .price")));
         Assert.That(driver.FindElement(By.CssSelector(".price-col:nth-child(3) > .price")).Text, Is.EqualTo("1 849 kr"));
         Assert.That(driver.FindElement(By.CssSelector(".freight > .price-col")).Text, Is.EqualTo("0 kr"));
         Assert.That(driver.FindElement(By.CssSelector(".qty-selector > label")).Text, Is.EqualTo("1"));
