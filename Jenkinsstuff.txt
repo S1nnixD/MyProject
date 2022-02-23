@@ -1,0 +1,4 @@
+.NET integration (C#)
+Git plugin
+MSBuild Plugin
+MSTestRunner Plugin
