@@ -2,3 +2,32 @@
 Git plugin
 MSBuild Plugin
 MSTestRunner Plugin
+
+Configuretest:
+Installera NUnit (nunit.org/downloads)
+1. Repository url
+2. Dina credentials
+3. Branch specifier: main
+4. Execute Windows batch
+	>Peka först mot nunit3-console.exe
+	>Peka mot ditt testprojekts .dll (debug, dinatest.dll)
+5. Testen kan nu köras utan chromefönster. För att installera chromeview följ nedan.
+
+Slave setup for Chromedriver
+1. Manage Jenkins
+2. New node
+3. Manage Jenkins
+4. Global Security
+5. Agents -> TCP port -> Random
+6. Apply, Save.
+
+Starta slave agent:
+1. Nodes
+2. Slave
+3. Ladda ner .jar filen
+4. Öppna kommandoprompt och bläddra (cd) till agent.jar
+5. Klistra in hela java strängen du fick av din Slave
+6. Gå tillbaka till nodes så ska Slave vara up and running.
+7. Gå tillbaka till ditt test, tryck konfigurera.
+8. Bocka i "Restrict where this project an be run", skriv Slave i rutan.
+9. Apply, Save. Kör ditt test.
