@@ -414,12 +414,11 @@
       "id": "61e13f37-1d2d-4312-b8fb-70439f67abd6",
       "comment": "",
       "command": "assertText",
-      "target": "css=strong",
+      "target": "css=.alert",
       "targets": [
-        ["css=strong", "css:finder"],
-        ["xpath=//body[@id='inet']/div[10]/div/div/form/section/div/div/div/strong", "xpath:idRelative"],
-        ["xpath=//strong", "xpath:position"],
-        ["xpath=//strong[contains(.,'Felaktigt användarnamn eller lösenord.')]", "xpath:innerText"]
+        ["css=.alert", "css:finder"],
+        ["xpath=//body[@id='inet']/div[10]/div/div/form/section/div/div/div", "xpath:idRelative"],
+        ["xpath=//form/section/div/div/div", "xpath:position"]
       ],
       "value": "Felaktigt användarnamn eller lösenord."
     }, {
@@ -445,11 +444,11 @@
       "id": "cf79aabf-bb4c-49b6-8541-4b667265f9a4",
       "comment": "",
       "command": "assertValue",
-      "target": "xpath=//*[@id=\"inet\"]/div[8]/div/div/form/section/div/div/div[3]/div/label/input",
+      "target": "css=label > input",
       "targets": [
         ["css=label > input", "css:finder"],
         ["xpath=//input[@type='checkbox']", "xpath:attributes"],
-        ["xpath=//body[@id='inet']/div[10]/div/div/form/section/div/div/div[4]/div/label/input", "xpath:idRelative"],
+        ["xpath=//body[@id='inet']/div[10]/div/div/form/section/div/div/div[3]/div/label/input", "xpath:idRelative"],
         ["xpath=//label/input", "xpath:position"]
       ],
       "value": "on"
