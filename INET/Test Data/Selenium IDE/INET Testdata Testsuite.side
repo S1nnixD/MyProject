@@ -5,7 +5,7 @@
   "url": "https://www.inet.se",
   "tests": [{
     "id": "a68a9514-ba4a-4dcf-adc9-06a11e1e6220",
-    "name": "Find PS5 w. artnr",
+    "name": "Search - Find PS5 w. artnr",
     "commands": [{
       "id": "fbcf9edf-b7be-4157-9d58-c5717fe140f7",
       "comment": "",
@@ -71,7 +71,7 @@
     }]
   }, {
     "id": "1c098f0e-3ac3-4df9-bc8a-2fef2339ab40",
-    "name": "Check pop. categories",
+    "name": "Pop. categories - Check exist",
     "commands": [{
       "id": "442aafef-901e-490b-8cd9-ea8709605dac",
       "comment": "",
@@ -166,7 +166,7 @@
     }]
   }, {
     "id": "69e2d220-b246-4e41-918f-f4fbf4770928",
-    "name": "Kolla kundvagn",
+    "name": "Kundvagn - Check stuff",
     "commands": [{
       "id": "91cd6cc8-34f6-4e81-9b4f-956dfb106505",
       "comment": "",
@@ -318,7 +318,7 @@
     }]
   }, {
     "id": "b4e4c82b-eadb-4544-9ece-d7f0ee968fa9",
-    "name": "Check login",
+    "name": "Login - Check empty and incorrect",
     "commands": [{
       "id": "c7311b72-8600-473c-85b1-216b702a433a",
       "comment": "",
@@ -500,6 +500,194 @@
         ["xpath=//label[contains(.,'Min sida')]", "xpath:innerText"]
       ],
       "value": "Min sida"
+    }]
+  }, {
+    "id": "bb87ffac-e9fc-4f2e-8500-98caab4270f2",
+    "name": "Create Account - Check error on empty",
+    "commands": [{
+      "id": "8b5b40e0-fa6a-4595-a31e-0176ffa89a1d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9382a4a5-4171-41de-8ac0-e7dd938ac302",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1811x992",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "baa3da4c-34ff-43f1-8494-a1f2d46b9d3d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.user > .text-nowrap",
+      "targets": [
+        ["css=.user > .text-nowrap", "css:finder"],
+        ["xpath=//div[@id='react-root']/div[2]/nav/div/div/button/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Min sida')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccacccc2-8e6e-4cfe-869d-9327076ba069",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Skapa konto",
+      "targets": [
+        ["linkText=Skapa konto", "linkText"],
+        ["css=.x-modal-action-link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Skapa konto')]", "xpath:link"],
+        ["xpath=//body[@id='inet']/div[9]/div/div/form/section/footer/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/registrera')]", "xpath:href"],
+        ["xpath=//footer/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Skapa konto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "251d8e9c-1545-46e4-8e7e-7e67f393b936",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[3]/div/div[2]/div[2]/div/div[2]/form/div/div[8]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Skapa konto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0729d97e-3be7-4f18-bdf7-66c4f5c0d2dd",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.row:nth-child(5) > .col-xs-12:nth-child(2)",
+      "targets": [
+        ["css=.row:nth-child(5) > .col-xs-12:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='react-root']/div[3]/div/div[2]/div[2]/div/div[2]/form/div/div[5]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0d8f5c23-620d-46ad-b692-81ed56db0232",
+    "name": "Create account - Check doublemail",
+    "commands": [{
+      "id": "dd4efba0-5978-49e6-85ae-217396007a03",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19c1d637-6ee3-42a9-919a-afef6edf4967",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1811x992",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31e1fcdf-abdb-46ae-be72-1ce368dac4ed",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=a:nth-child(2) > img",
+      "targets": [
+        ["css=a:nth-child(2) > img", "css:finder"],
+        ["xpath=//img[@alt='Prisjakt']", "xpath:img"],
+        ["xpath=//div[@id='react-root']/div[2]/header/nav/div[3]/a[2]/img", "xpath:idRelative"],
+        ["xpath=//a[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c0345e2-4cb9-4eab-9d08-0cd2756cb97d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=a:nth-child(2) > img",
+      "targets": [
+        ["css=a:nth-child(2) > img", "css:finder"],
+        ["xpath=//img[@alt='Prisjakt']", "xpath:img"],
+        ["xpath=//div[@id='react-root']/div[2]/header/nav/div[3]/a[2]/img", "xpath:idRelative"],
+        ["xpath=//a[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb74b16f-6a4c-4c6e-8355-fae338277dae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.user > .text-nowrap",
+      "targets": [
+        ["css=.user > .text-nowrap", "css:finder"],
+        ["xpath=//div[@id='react-root']/div[2]/nav/div/div/button/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Min sida')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf174f8b-e916-4617-beed-db9c77a1f3d8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Skapa konto",
+      "targets": [
+        ["linkText=Skapa konto", "linkText"],
+        ["css=.x-modal-action-link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Skapa konto')]", "xpath:link"],
+        ["xpath=//body[@id='inet']/div[9]/div/div/form/section/footer/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/registrera')]", "xpath:href"],
+        ["xpath=//footer/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Skapa konto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d243b9a-8b1f-4eec-8167-721280cc4118",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[3]/div/div[2]/div[2]/div/div[2]/form/div/div[5]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2da5732-9dac-4262-aa0e-e4694f353039",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[3]/div/div[2]/div[2]/div/div[2]/form/div/div[5]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "test@gmail.com"
+    }, {
+      "id": "2a586846-eb4a-4aaa-b32e-3540f3b751a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[3]/div/div[2]/div[2]/div/div[2]/form/div/div[8]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Skapa konto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4ff0a30-de8b-431f-9c23-dce9141d2b2e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.row:nth-child(5) > .col-xs-12:nth-child(3)",
+      "targets": [
+        ["css=.row:nth-child(5) > .col-xs-12:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='react-root']/div[3]/div/div[2]/div[2]/div/div[2]/form/div/div[5]/div[3]", "xpath:idRelative"],
+        ["xpath=//div/div[5]/div[3]", "xpath:position"]
+      ],
+      "value": ""
     }]
   }],
   "suites": [{
