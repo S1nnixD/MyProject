@@ -36,7 +36,7 @@ public class CreateaccountCheckdoublemailTest {
       builder.MoveToElement(element).Perform();
     }
     {
-      var element = driver.FindElement(By.tagName("body"));
+      var element = driver.FindElement(By.TagName("body"));
       Actions builder = new Actions(driver);
       builder.MoveToElement(element, 0, 0).Perform();
     }
