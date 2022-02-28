@@ -30,7 +30,9 @@ public class CreateAccountCheckerroronemptyTest {
   public void createAccountCheckerroronempty() {
     driver.Navigate().GoToUrl("https://www.inet.se/");
     driver.Manage().Window.Size = new System.Drawing.Size(1811, 992);
-    driver.FindElement(By.CssSelector(".user > .text-nowrap")).Click();
+        driver.FindElement(By.ClassName("agx7mup")).Click();
+        driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+        driver.FindElement(By.CssSelector(".user > .text-nowrap")).Click();
     driver.FindElement(By.LinkText("Skapa konto")).Click();
     driver.FindElement(By.CssSelector(".btn-success")).Click();
     var elements = driver.FindElements(By.CssSelector(".row:nth-child(5) > .col-xs-12:nth-child(2)"));

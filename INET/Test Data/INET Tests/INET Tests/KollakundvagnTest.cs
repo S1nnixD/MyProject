@@ -35,6 +35,8 @@ public class KollakundvagnTest {
     {
         driver.Navigate().GoToUrl("https://www.inet.se/");
         driver.Manage().Window.Size = new System.Drawing.Size(1861, 1050);
+        driver.FindElement(By.ClassName("agx7mup")).Click();
+        driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
         driver.FindElement(By.CssSelector(".form-control")).Click();
         driver.FindElement(By.CssSelector(".form-control")).SendKeys("4302202");
         driver.FindElement(By.CssSelector(".form-control")).SendKeys(Keys.Enter);

@@ -40,12 +40,20 @@ public class CreateaccountCheckdoublemailTest {
       Actions builder = new Actions(driver);
       builder.MoveToElement(element, 0, 0).Perform();
     }
-    driver.FindElement(By.CssSelector(".user > .text-nowrap")).Click();
-    driver.FindElement(By.LinkText("Skapa konto")).Click();
-    driver.FindElement(By.Id("email")).Click();
-    driver.FindElement(By.Id("email")).SendKeys("test@gmail.com");
-    driver.FindElement(By.CssSelector(".btn-success")).Click();
-    var elements = driver.FindElements(By.CssSelector(".row:nth-child(5) > .col-xs-12:nth-child(3)"));
-    Assert.True(elements.Count > 0);
+        driver.FindElement(By.ClassName("agx7mup")).Click();
+        driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+        driver.FindElement(By.CssSelector(".user > .text-nowrap")).Click();
+        driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+        driver.FindElement(By.LinkText("Skapa konto")).Click();
+        driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+        driver.FindElement(By.Id("email")).Click();
+        driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+        driver.FindElement(By.Id("email")).SendKeys("test@gmail.com");
+        driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+        driver.FindElement(By.CssSelector(".btn-success")).Click();
+        driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+        var elements = driver.FindElements(By.CssSelector(".row:nth-child(5) > .col-xs-12:nth-child(3)"));
+        driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+        Assert.True(elements.Count > 0);
   }
 }

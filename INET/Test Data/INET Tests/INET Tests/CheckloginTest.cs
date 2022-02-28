@@ -31,6 +31,8 @@ public class CheckloginTest {
   {
         driver.Navigate().GoToUrl("https://www.inet.se/");
         driver.Manage().Window.Size = new System.Drawing.Size(1920, 1040);
+        driver.FindElement(By.ClassName("agx7mup")).Click();
+        driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
         driver.FindElement(By.CssSelector(".user > .text-nowrap")).Click();
         driver.FindElement(By.Id("login.email")).SendKeys("asdasd@test.com");
         driver.FindElement(By.Id("password")).SendKeys("asdasd");
