@@ -31,3 +31,31 @@ Starta slave agent:
 7. Gå tillbaka till ditt test, tryck konfigurera.
 8. Bocka i "Restrict where this project an be run", skriv Slave i rutan.
 9. Apply, Save. Kör ditt test.
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout code') {
+            steps {
+                node('Slave') {
+                    git branch: 'main', url:'https://github.com/S1nnixD/MyProject'
+                }
+            }
+        }
+        stage('Build solution') {
+            steps {
+                node('Slave') {
+                    bat 'ExecBuild.bat'
+                }
+            }
+        }             
+        stage('Run tests') {
+            steps {
+                node('Slave') {
+                    bat 'ExecTests.bat'
+                }
+            }
+        }
+    }
+}
