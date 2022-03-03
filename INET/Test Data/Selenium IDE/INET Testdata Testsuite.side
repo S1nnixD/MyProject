@@ -689,6 +689,213 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "4aebac35-f19d-4a4f-8105-f958ee1224d1",
+    "name": "Hemfixarna",
+    "commands": [{
+      "id": "9d00aef7-296a-4013-8985-1849fce64def",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7a6f332-863c-4208-a22a-49772902f637",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1811x992",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4c8fc6d-16dc-40c4-915e-7aaa3f9d490a",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(20) .name",
+      "targets": [
+        ["css=li:nth-child(20) .name", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li[20]/div/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[20]/div/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Servicetjänster')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "84ebb726-39f3-4da3-a313-3b54f04541a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.column:nth-child(2) .buttonimg",
+      "targets": [
+        ["css=.column:nth-child(2) .buttonimg", "css:finder"],
+        ["xpath=//img[contains(@src,'https://inetimg.se/gfx/ext/226/svg/hemfixarna2.svg')]", "xpath:img"],
+        ["xpath=//div[@id='react-root']/div[3]/div/div[2]/div[2]/article/div/div/div[2]/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb8f61a9-20ed-4db9-b3c1-a9017c6375be",
+      "comment": "",
+      "command": "click",
+      "target": "id=hideshow",
+      "targets": [
+        ["id=hideshow", "id"],
+        ["linkText=Boka hemfixare", "linkText"],
+        ["css=#hideshow", "css:finder"],
+        ["xpath=//a[contains(text(),'Boka hemfixare')]", "xpath:link"],
+        ["xpath=//a[@id='hideshow']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[3]/div/div[2]/div[2]/article/div/div/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boka hemfixare')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f65fd12-04dc-480c-adcf-86eba31100fe",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "687d782a-def6-43e6-aeb8-e424e719567a",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-4775-field_23",
+      "targets": [
+        ["id=wpforms-4775-field_23", "id"],
+        ["name=wpforms[fields][23]", "name"],
+        ["css=#wpforms-4775-field_23", "css:finder"],
+        ["xpath=//select[@id='wpforms-4775-field_23']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-4775-field_23-container']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd9577ef-e562-45db-9d9a-1891a061af5e",
+      "comment": "",
+      "command": "select",
+      "target": "id=wpforms-4775-field_23",
+      "targets": [],
+      "value": "index=1"
+    }, {
+      "id": "a0e33a04-8c57-4027-86a3-833dc8facab1",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "id=wpforms-4775-field_23",
+      "targets": [],
+      "value": "Installation av dator – 699 kr "
+    }, {
+      "id": "67ab2e21-8dac-48c0-88e6-8460c972162b",
+      "comment": "",
+      "command": "select",
+      "target": "id=wpforms-4775-field_23",
+      "targets": [],
+      "value": "index=2"
+    }, {
+      "id": "026e69e3-aa71-4588-8de6-f786ef50270b",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "id=wpforms-4775-field_23",
+      "targets": [],
+      "value": "Installation av väggfäste – 799 kr "
+    }, {
+      "id": "9e65f647-3bea-4f48-8c9a-088396fc4485",
+      "comment": "",
+      "command": "select",
+      "target": "id=wpforms-4775-field_23",
+      "targets": [],
+      "value": "index=3"
+    }, {
+      "id": "ea546171-33f1-457e-bd22-8944adf65a08",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "id=wpforms-4775-field_23",
+      "targets": [],
+      "value": "Installation av ny mobil – 599 kr "
+    }, {
+      "id": "62e2d214-3776-4a12-bf3b-919f2c011608",
+      "comment": "",
+      "command": "select",
+      "target": "id=wpforms-4775-field_23",
+      "targets": [],
+      "value": "index=4"
+    }, {
+      "id": "6df09b68-a07f-4464-a5f0-b6e67bd62f79",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "id=wpforms-4775-field_23",
+      "targets": [],
+      "value": "Installation av router – 599 kr "
+    }, {
+      "id": "f3ecb932-d807-4111-80fc-ff44ac5b7aec",
+      "comment": "",
+      "command": "select",
+      "target": "id=wpforms-4775-field_23",
+      "targets": [],
+      "value": "index=5"
+    }, {
+      "id": "082b566e-8813-42ff-a649-8086141baa08",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "id=wpforms-4775-field_23",
+      "targets": [],
+      "value": "Installation av skrivare – 599 kr "
+    }, {
+      "id": "311f17f7-e6e5-4cc8-994e-0e2a84e35520",
+      "comment": "",
+      "command": "select",
+      "target": "id=wpforms-4775-field_23",
+      "targets": [],
+      "value": "index=6"
+    }, {
+      "id": "ecde0a43-4947-4150-9e0a-a10aabdc0440",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "id=wpforms-4775-field_23",
+      "targets": [],
+      "value": "Optimering av trådlöst nätverk – 699 kr "
+    }, {
+      "id": "75cf4a89-f544-44ce-8044-f0ab4bf61aa9",
+      "comment": "",
+      "command": "select",
+      "target": "id=wpforms-4775-field_23",
+      "targets": [],
+      "value": "index=7"
+    }, {
+      "id": "fd275272-a7ba-4d63-ad69-1bd279c9b608",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "id=wpforms-4775-field_23",
+      "targets": [],
+      "value": "Felsökning av nätverk – 499 kr/h "
+    }, {
+      "id": "70655c88-47fe-4024-baab-b6109840d015",
+      "comment": "",
+      "command": "select",
+      "target": "id=wpforms-4775-field_23",
+      "targets": [],
+      "value": "index=8"
+    }, {
+      "id": "c43ea4f5-cdca-4db4-a33c-f75a54e7fcd1",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "id=wpforms-4775-field_23",
+      "targets": [],
+      "value": "Felsökning av skrivare – 499 kr/h "
+    }, {
+      "id": "67c2102a-3f33-45f5-a249-79f806ef513e",
+      "comment": "",
+      "command": "select",
+      "target": "id=wpforms-4775-field_23",
+      "targets": [],
+      "value": "index=9"
+    }, {
+      "id": "6fc5df18-fd8d-43ea-996f-a9d2587f45b3",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "id=wpforms-4775-field_23",
+      "targets": [],
+      "value": "Övrig installation/felsökning – 499 kr/h "
+    }]
   }],
   "suites": [{
     "id": "2af5dcd5-966b-4cb0-b626-1a903dafbcf5",

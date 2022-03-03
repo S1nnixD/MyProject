@@ -12,7 +12,7 @@ using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Interactions;
 using NUnit.Framework;
 [TestFixture]
-public class TestloginTest {
+public class XiamiTest {
   private IWebDriver driver;
   public IDictionary<string, object> vars {get; private set;}
   private IJavaScriptExecutor js;
@@ -27,10 +27,14 @@ public class TestloginTest {
     driver.Quit();
   }
   [Test]
-  public void testlogin() {
-    driver.Navigate().GoToUrl("https://www.webhallen.com");
-    driver.Manage().Window.Size = new System.Drawing.Size(1861, 1050);
-        //driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-        Assert.That(driver.FindElement(By.LinkText("Sign In")).Text, Is.EqualTo("Sign In"));
+  public void xiami() {
+    driver.Navigate().GoToUrl("https://www.webhallen.com/");
+    driver.Manage().Window.Size = new System.Drawing.Size(1811, 992);
+    driver.FindElement(By.CssSelector(".form-control")).SendKeys("333044");
+    driver.FindElement(By.CssSelector(".form-control")).SendKeys(Keys.Enter);
+    driver.FindElement(By.LinkText("Xiaomi Mi Body Composition Scale 2")).Click();
+    driver.FindElement(By.CssSelector(".text-btn:nth-child(3) > span")).Click();
+    driver.FindElement(By.CssSelector(".stretch-y")).Click();
+    Assert.That(driver.FindElement(By.CssSelector(".free-shipping-info > span")).Text, Is.Not.EqualTo("Fri frakt tillgängligt!"));
   }
 }
