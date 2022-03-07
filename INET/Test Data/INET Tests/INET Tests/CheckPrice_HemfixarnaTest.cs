@@ -42,14 +42,10 @@ public class HemfixarnaTest {
     }
     {
       var element = driver.FindElement(By.Id("wpforms-4775-field_23"));
-      string value = element.GetAttribute("value");
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-
-            string locator = string.Format("option[@value='%s']", value);
-
-            string selectedText = element.FindElement(By.XPath(locator)).Text;
-
-            Assert.That(selectedText, Is.EqualTo("Installation av dator – 699 kr "));
+      //string value = element.GetAttribute("value");
+      //string locator = string.Format("option[@value='%s']", value);
+      string selectedText = element.FindElement(By.Id("wpforms-4775-field_23")).Text;
+      Assert.That(selectedText, Is.EqualTo("Installation av dator – 699 kr "));
     }
     {
       var dropdown = driver.FindElement(By.Id("wpforms-4775-field_23"));
