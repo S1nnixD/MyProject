@@ -896,6 +896,331 @@
       "targets": [],
       "value": "Övrig installation/felsökning – 499 kr/h "
     }]
+  }, {
+    "id": "ffa1a903-1b36-4d05-85b6-988cd266d63b",
+    "name": "Menu_CheckCategories",
+    "commands": [{
+      "id": "638d76c5-c66e-4c2a-95ae-e76cdf19400d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "299dd6ce-f43f-4171-b2aa-73ccad70d0dd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1800x992",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da3746d3-5f6d-4c96-838c-c81abcab7f5a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Bildskärm",
+      "targets": [
+        ["linkText=Bildskärm", "linkText"],
+        ["css=li:nth-child(1) .item-button", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kategori/30/bildskarm')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bildskärm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7a09e56-4b97-427f-99db-36607d0de9f6",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Datorer",
+      "targets": [
+        ["linkText=Bildskärm", "linkText"],
+        ["css=li:nth-child(1) .item-button", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kategori/30/bildskarm')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bildskärm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e72f692f-15e2-4143-a86b-52572c8bdf11",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Dator­komponenter",
+      "targets": [
+        ["linkText=Dator­komponenter", "linkText"],
+        ["css=li:nth-child(3) .item-button", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li[3]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kategori/31/datorkomponenter')]", "xpath:href"],
+        ["xpath=//li[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dator­komponenter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8dd8dd96-fc27-4322-9a86-683dade63384",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Datortillbehör",
+      "targets": [
+        ["linkText=Bildskärm", "linkText"],
+        ["css=li:nth-child(1) .item-button", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kategori/30/bildskarm')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bildskärm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "afec4e5d-ed2d-4c4d-a7fe-e80f76228fa0",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Extern Lagring",
+      "targets": [
+        ["linkText=Bildskärm", "linkText"],
+        ["css=li:nth-child(1) .item-button", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kategori/30/bildskarm')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bildskärm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba751256-8387-492e-8714-2181f43d4cd2",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Hem/Fritid/Hälsa",
+      "targets": [
+        ["linkText=Bildskärm", "linkText"],
+        ["css=li:nth-child(1) .item-button", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kategori/30/bildskarm')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bildskärm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e25f1699-317d-46f9-99d4-6cb04a7641d2",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Kablar/Adaptrar",
+      "targets": [
+        ["linkText=Bildskärm", "linkText"],
+        ["css=li:nth-child(1) .item-button", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kategori/30/bildskarm')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bildskärm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "16edbe26-b3b1-4dec-87c3-bd817f48cc8d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Ljud/Bild",
+      "targets": [
+        ["linkText=Bildskärm", "linkText"],
+        ["css=li:nth-child(1) .item-button", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kategori/30/bildskarm')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bildskärm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bca46f0-df12-4648-964c-239dd5f4d31c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Mobiltelefon",
+      "targets": [
+        ["linkText=Bildskärm", "linkText"],
+        ["css=li:nth-child(1) .item-button", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kategori/30/bildskarm')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bildskärm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8278c1f-8d72-4c7e-91ce-30cc679e2a83",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Nätverk",
+      "targets": [
+        ["linkText=Bildskärm", "linkText"],
+        ["css=li:nth-child(1) .item-button", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kategori/30/bildskarm')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bildskärm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d937615c-29cb-4986-a724-4ea78d314dbb",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Presentkort",
+      "targets": [
+        ["linkText=Bildskärm", "linkText"],
+        ["css=li:nth-child(1) .item-button", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kategori/30/bildskarm')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bildskärm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "60a17c65-e585-48bf-92a4-ef2ac3aab8ed",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Programvara",
+      "targets": [
+        ["linkText=Bildskärm", "linkText"],
+        ["css=li:nth-child(1) .item-button", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kategori/30/bildskarm')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bildskärm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6eb9d8f1-e008-4809-bb58-492d37cc4063",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Skrivare/Scanner",
+      "targets": [
+        ["linkText=Bildskärm", "linkText"],
+        ["css=li:nth-child(1) .item-button", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kategori/30/bildskarm')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bildskärm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "83ff8d8a-f24a-47e5-9587-6315461c9e45",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Smarta Hem",
+      "targets": [
+        ["linkText=Bildskärm", "linkText"],
+        ["css=li:nth-child(1) .item-button", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kategori/30/bildskarm')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bildskärm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fff10dd2-5b19-4786-9a14-e597ea3cde1f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Spel/Konsol/VR",
+      "targets": [
+        ["linkText=Bildskärm", "linkText"],
+        ["css=li:nth-child(1) .item-button", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kategori/30/bildskarm')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bildskärm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "456007fd-617e-41dc-a041-b9b00fea6a8e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Surfplatta",
+      "targets": [
+        ["linkText=Bildskärm", "linkText"],
+        ["css=li:nth-child(1) .item-button", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kategori/30/bildskarm')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bildskärm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "299e9a93-c6ed-4327-a48c-be438bb076ab",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Kampanjer",
+      "targets": [
+        ["linkText=Bildskärm", "linkText"],
+        ["css=li:nth-child(1) .item-button", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kategori/30/bildskarm')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bildskärm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e931bcba-b125-4d8b-9c4e-3c9624dbb493",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Fyndhörnan",
+      "targets": [
+        ["linkText=Bildskärm", "linkText"],
+        ["css=li:nth-child(1) .item-button", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kategori/30/bildskarm')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bildskärm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcaf4041-8cc9-4f72-bacb-3b3b0afe5034",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Tävlingar",
+      "targets": [
+        ["linkText=Bildskärm", "linkText"],
+        ["css=li:nth-child(1) .item-button", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kategori/30/bildskarm')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bildskärm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "daad8eb7-17dd-45a0-8770-cfe4aad283b7",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=li:nth-child(20) .item-button",
+      "targets": [
+        ["css=li:nth-child(20) .item-button", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li[20]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/info/725/servicetjanster')]", "xpath:href"],
+        ["xpath=//li[20]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Servicetjänster')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c63ed72-3b49-444f-bfdc-ad50414ab6bc",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Guider",
+      "targets": [
+        ["linkText=Bildskärm", "linkText"],
+        ["css=li:nth-child(1) .item-button", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kategori/30/bildskarm')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bildskärm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b8d879e-c7a3-48cc-853e-af506316dff0",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Datorbyggare",
+      "targets": [
+        ["linkText=Bildskärm", "linkText"],
+        ["css=li:nth-child(1) .item-button", "css:finder"],
+        ["xpath=//div[@id='category-tree']/div[2]/ol/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kategori/30/bildskarm')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bildskärm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "2af5dcd5-966b-4cb0-b626-1a903dafbcf5",
